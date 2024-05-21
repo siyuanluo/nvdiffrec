@@ -605,6 +605,9 @@ if __name__ == "__main__":
         geometry, mat = optimize_mesh(glctx, geometry, mat, lgt, dataset_train, dataset_validate, 
                         FLAGS, pass_idx=0, pass_name="dmtet_pass1", optimize_light=FLAGS.learn_light)
 
+        input("type...")
+        # Add Simulation Code Here.
+
         if FLAGS.local_rank == 0 and FLAGS.validate:
             validate(glctx, geometry, mat, lgt, dataset_validate, os.path.join(FLAGS.out_dir, "dmtet_validate"), FLAGS)
 
