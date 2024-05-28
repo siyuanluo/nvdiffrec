@@ -626,6 +626,7 @@ if __name__ == "__main__":
             # Dump mesh for debugging.
             os.makedirs(os.path.join(FLAGS.out_dir, "dmtet_mesh"), exist_ok=True)
             obj.write_obj(os.path.join(FLAGS.out_dir, "dmtet_mesh/"), base_mesh)
+            #[TODO]: add write tet mesh code
             light.save_env_map(os.path.join(FLAGS.out_dir, "dmtet_mesh/probe.hdr"), lgt)
 
         # ==============================================================================================
